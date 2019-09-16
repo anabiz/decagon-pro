@@ -1,0 +1,40 @@
+{
+  "freelance": [
+    {
+      "id": 1,
+      "name": "Sebastian",
+      "job": "Graphic designer",
+      "charge": "NGN3000/hr",
+      "profile":"yyuuiii uuittrt rretr "
+    },
+    {
+      "id": 2,
+      "name": "Esther",
+      "job": "fashion designer",
+      "charge": "NGN2000/hr",
+      "profile":"tffhg ddw kkik uuittrt rretr "
+    },
+    {
+      "id": 3,
+      "name": "Joseph",
+      "job": "web developer",
+      "charge": "NGN3500/hr",
+      "profile":"yyuu iut ews iii uuittrt rretr "
+    },
+    {
+      "id": 4,
+      "name": "chiagozie",
+      "job": "construction engr.",
+      "charge": "NGN5000/hr",
+      "profile":"yyuuiii uuittrt rr juthft etr "
+    },
+    {
+      "id": 5, 
+      "name": "ikechukwu",
+      "job": "builder",
+      "charge": "NGN2000/hr",
+      "profile":"xdrtj kukkigi uuittrt rretr "
+    }
+    
+  ]
+}
