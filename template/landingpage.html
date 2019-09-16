@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>online freelance market</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -22,8 +22,8 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">login</a></li>
-      <li><a href="#">sign up</a></li>
-      <li><a href="#">Post a job</a></li>
+      <li><a href="/template/accountform.html">sign up</a></li>
+      <li><a href="/template/accountform.html">Post a job</a></li>
     </ul>
   </div>
 </nav>
@@ -32,10 +32,30 @@
   <h3>Basic Navbar Example</h3>
   <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
 </div>
-<div style="background-color: brown; height: 50mm;">
-<div class="freelancer">ggggg</div>
-<div ></div>
+<div style= "height: 50mm;">
+  <div id="dvImage" style="height: 308px; width: 410px">
+  </div>
+  
+<div ></div id="display-freelancers">
 </div>
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    var images = ["Chrysanthemum.jpg", "Desert.jpg", "Hydrangeas.jpg", "Jellyfish.jpg", "Koala.jpg", "Lighthouse.jpg", "Penguins.jpg", "Tulips.jpg"];
+    $(function () {
+        var i = 0;
+        $("#dvImage").css("background-image", "url(template/" + images[i] + ")");
+        setInterval(function () {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#dvImage").fadeOut("slow", function () {
+                $(this).css("background-image", "url(template/" + images[i] + ")");
+                $(this).fadeIn("slow");
+            });
+        }, 5000);
+    });
+</script>
+ 
 </body>
 </html>
