@@ -1,18 +1,43 @@
-const DATABASE_URL ="http://localhost:3000/freelance";
-const getcontact = async()=>{
-    const response=await fetch(DATABASE_URL);
-    const contact =await response.json();
-    console.log(contact);
-    populatecontact(contact);
+const DATABASE_URI = 'http://localhost:3000/freelance';
+let EDIT_CONTACT;
+
+
+const form = document.querySelector('form');
+const submitNewContact = document.querySelector('#submit-new-contact');
+const submitEditedContact = document.querySelector('#submit-edited-contact');
+submitEditedContact.style.display = 'hidden';
+
+// get data from our backend
+const getcontact = async () => {
+  const response = await fetch(DATABASE_URI);
+  const contacts = await response.json();
+  populateContacts(contacts);
 };
 
-const populatecontact = contact=>{
-    formatactedcontacts = contact.map(formatactcontacts);
-    const displaycontact = document.querySelector('.display-freelancers');
-    displaycontact.innerHTML+=formatactedcontacts.json();
-};
+  // get data and populate our page with data
+const populateContacts = contacts => {
+    const formatedContacts = contacts.map(formatContact);
+    const displayContacts = document.querySelector('.display-freelancers');
+  
+    displayContacts.innerHTML += formatedContacts.join('');
+  };
 
-const formatecontacts=({name,job,country,charge,profile})=>{
-   return '<div class="contact"><div>${name}${job}${charge}${profile}<div/><div/>';
-         };
+// get single contact data and formate it
+const formatContact = contact => {
+    const { name, job, country, charge, profile } = contact;
+    return `
+    <div class='contact' data-contact=${JSON.stringify(contact)}>
+        <div> ${name} ${job} ${country} ${charge} </div>
+        <div> ${profile}</div>
+        <div class='edit-contact'>
+              <button id='edit'>Edit</button>
+              <button id='delete'>Delete</button>
+        </div>
+    </div>
+    `;
+  };
+  
+
+
+
 $(document).ready(getcontact)
