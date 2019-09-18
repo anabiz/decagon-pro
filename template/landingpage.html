@@ -10,58 +10,98 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="script" type="text/css" href="/script.js"/>
   <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" href="file:///C:/Users/Anabiz/decagon-pro/template/styles.css"/>
+  <link rel="stylesheet" href="file:///C:/Users/Anabiz/decagon-pro/template/accountform.html">
+ 
 </head>
 <style>
   img{
-    width: 70%;
-    align-self:right;
+    width:100%;
+    
   }
 </style>
-<body>
+<body style="background-color:floralwhite">
   
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Anabiz</a>
+      <a class="navbar-brand" href="file:///C:/Users/Anabiz/decagon-pro/template/accountform.html">Anabiz</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">login</a></li>
-      <li><a href="/template/accountform.html">sign up</a></li>
-      <li><a href="/template/accountform.html">Post a job</a></li>
+      <li><a  href="#">login</a></li>
+      <li><a onclick="myfunction()" href="#">sign up</a></li>
+      <li><a onclick="myfunction()" href="#">Post a job</a></li>
     </ul>
   </div>
 </nav>
   
 
-<div class="containe navbar navbar-default">
-  <div id="dvImage" style="height: 308px;background-color: crimson"> <span></span><img style="height: 308px" src="koala.jpg" alt="a teacher"></span>
-  <span> <h2>Get someone to do the job</h2></span>
+
+
+
+      <div id="dvImage" style="height: 300px"> <span><img id="image" style="height: 308px" src="koala.jpg" alt="a teacher"></span>
+
+      </div>
+  
   </div>
- <div class="container">
-<div id="display-freelancers">
+  
+  
+    <div class="well">
+    <section>
+        <form id="form" style="display: none">
+          <input type="text" placeholder="contact title" name="title" />
+          <input type="text" placeholder="contact firstName" name="firstName" />
+          <input type="text" placeholder="contact lastName" name="lastName" />
+          <input type="number" placeholder="contact phone" name="phone" />
+          <button id="submit-new-contact">add new contact</button>
+          <button id="submit-edited-contact">save contact</button>
+        </form>
+    </section>
+        
+  
+  </div>
+</div>
+
+
+<div class="well">
+<div class="container">
+</div>
+
+
+<div class="display-freelancers" style="margin-top: 500pxs">
 </div >
 </div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript">
-    var images = ["Chrysanthemum.jpg", "Desert.jpg", "Hydrangeas.jpg", "Jellyfish.jpg", "Koala.jpg", "Lighthouse.jpg", "Penguins.jpg", "Tulips.jpg"];
-    $(function () {
-        var i = 0;
-        $("#dvImage").css("background-image", "url(template/" + images[i] + ")");
-        setInterval(function () {
-            i++;
-            if (i == images.length) {
-                i = 0;
-            }
-            $("#dvImage").fadeOut("slow", function () {
-                $(this).css("background-image", "url(template/" + images[i] + ")");
-                $(this).fadeIn("slow");
-            });
-        }, 5000);
-    });
+<script>
+
+      var imageSources = ["Desert.jpg", "Jellyfish.jpg"];
+      
+      var index = 0;
+      setInterval (function(){
+        if (index === imageSources.length) {
+          index = 0;
+        }
+        document.getElementById("image").src = imageSources[index];
+        index++;                                                                                                                                                                                     
+      } , 4000);
+
+  function myfunction() {
+  var x = document.getElementById("form");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }else{
+    x.style.display = "none";
+  }
+}
+
 </script>
- 
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"
+></script>
+<script src="file:///C:/Users/Anabiz/decagon-pro/script.js"></script>
 </body>
 </html>
