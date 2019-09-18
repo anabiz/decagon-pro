@@ -7,49 +7,164 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
-<body>
-  
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/decagon-pro/template/landingpage.html">Anabiz</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/template/landingpage.html">Home</a></li>
-    </ul>
-  </div>
-</nav>
-  <div style="margin: 20px,20px,20px,20px">
-<form action="#">
-    <div class="form-group">
-      <label for="name">name:</label>
-      <input type="text" class="form-control" id="name">
-    </div>
-    <div class="form-group">
-      <label for="pwd">job:</label>
-      <input type="text" class="form-control" id="job">
-    </div>
-    <div class="form-group">
-        <label for="cont">country:</label>
-        <input type="text" class="form-control" id="cont">
-      </div>
-      <div class="form-group">
-        <label for="pwd">charge</label>
-        <input type="password" class="form-control" id="charg">
-      </div>
-      <div class="form-group">
-        <label for="pwd">charge</label>
-        <input type="text" class="form-control" id="charg">
-      </div>
-      <div class="form-group">
-        <label for="pro">profile</label>
-        <input type="text" class="form-control" id="pro">
-      </div>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
     
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="file:///C:/Users/Anabiz/decagon-pro/template/accountform.html">Anabiz</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">login</a></li>
+        <li><a href="#">sign up</a></li>
+        <li><a href="#">Post a job</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <br>
+      <form>
+        <input type="email" placeholder="email" name="title" />
+        <input type="text" placeholder="user-name" name="firstName" />
+       
+        <button id="loginbutton" >log in</button>
+        <button id="sign-up-form">sign-up</button>
+      </form>
+
+    </div>
+    <br>
+    <div class="well">
+      <section>
+          <form id="form">
+            <input type="text" placeholder="contact title" name="title" />
+            <input type="text" placeholder="contact firstName" name="firstName" />
+            <input type="text" placeholder="contact lastName" name="lastName" />
+            <input type="number" placeholder="contact phone" name="phone" />
+            <button id="submit-new-contact">add new contact</button>
+            <button id="submit-edited-contact">save contact</button>
+          </form>
+      </section>
+          
+    
+    </div>
+    <div class="col-sm-9">
+      <div class="well">
+        <div id="dvImage" style="height: 300px"> <span><img id="image" style="height: 308px; width: 100%" src="koala.jpg" alt="a teacher"></span>
+
+        </div>
+        <p>Some text..</p>
+      </div>
+      <div class="row">
+        
+        <div class="col-sm-4" class="display-freelancers">
+          <div class="well">
+            <h4>Pages</h4>
+            <p>100 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>Sessions</h4>
+            <p>10 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>Bounce</h4>
+            <p>30%</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="well">
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<script src="./login.js"></script>
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+ integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+ crossorigin="anonymous"
+></script>
+
+<script>
+
+  var imageSources = ["Desert.jpg", "Jellyfish.jpg"];
+  
+  var index = 0;
+  setInterval (function(){
+    if (index === imageSources.length) {
+      index = 0;
+    }
+    document.getElementById("image").src = imageSources[index];
+    index++;                                                                                                                                                                                     
+  } , 4000);
+
+function myfunction() {
+var x = document.getElementById("form");
+if (x.style.display === "none") {
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+}
+
+</script>
 </body>
 </html>
