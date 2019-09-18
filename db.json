@@ -1,39 +1,79 @@
 {
   "freelance": [
     {
-      "id": 1,
-      "name": "Sebastian",
-      "job": "Graphic designer",
-      "charge": "NGN3000/hr",
-      "profile":"yyuuiii uuittrt rretr "
+      "title": "decagon assesment 1",
+      "firstName": "rrrr",
+      "lastName": "dewdgg",
+      "phone": "577890",
+      "id": 12
     },
     {
-      "id": 2,
-      "name": "Esther",
-      "job": "fashion designer",
-      "charge": "NGN2000/hr",
-      "profile":"tffhg ddw kkik uuittrt rretr "
+      "title": "decagon assesment 1",
+      "firstName": "rrrr",
+      "lastName": "dewdgg",
+      "phone": "577890",
+      "id": 13
     },
     {
-      "id": 3,
-      "name": "Joseph",
-      "job": "web developer",
-      "charge": "NGN3500/hr",
-      "profile":"yyuu iut ews iii uuittrt rretr "
+      "title": "decagon assesment 1",
+      "firstName": "rrrr",
+      "lastName": "xfssdd",
+      "phone": "7765",
+      "id": 14
     },
     {
-      "id": 4,
-      "name": "chiagozie",
-      "job": "construction engr.",
-      "charge": "NGN5000/hr",
-      "profile":"yyuuiii uuittrt rr juthft etr "
+      "title": "decagon assesment 1",
+      "firstName": "rrrr",
+      "lastName": "xfssdd",
+      "phone": "7765",
+      "id": 15
     },
     {
-      "id": 5, 
-      "name": "ikechukwu",
-      "job": "builder",
-      "charge": "NGN2000/hr",
-      "profile":"xdrtj kukkigi uuittrt rretr "
+      "title": "decagon assesment 2",
+      "firstName": "ggrdd",
+      "lastName": "xfssdd",
+      "phone": "66788",
+      "id": 16
+    },
+    {
+      "title": "decagon assesment 1",
+      "firstName": "tochukwu",
+      "lastName": "ani",
+      "phone": "08065661350",
+      "id": 17
+    },
+    {
+      "title": "decagon assesment 1",
+      "firstName": "tochukwu",
+      "lastName": "ani",
+      "phone": "08065661350",
+      "id": 18
+    },
+    {
+      "firstName": "mr mike ogbonna",
+      "lastName": "Graphi designer",
+      "phone": "08065774327",
+      "id": 21
+    },
+    {
+      "firstName": "Mrs jenipher chalse",
+      "lastName": "fashion designer",
+      "phone": "08077765432",
+      "id": 22
+    },
+    {
+      "firstName": "chukwu chidi",
+      "lastName": "plumber",
+      "phone": "09043421267",
+      "id": 23
+    }
+  ],
+  "user": [
+    {
+      "password": "300"
+    },
+    {
+      "email": "anabizconcept9@gmail.com"
     }
   ]
 }
