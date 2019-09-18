@@ -1,7 +1,6 @@
 const DATABASE_URI = 'http://localhost:3000/freelance';
 let EDIT_CONTACT;
 
-
 const form = document.querySelector('form');
 const submitNewContact = document.querySelector('#submit-new-contact');
 const submitEditedContact = document.querySelector('#submit-edited-contact');
@@ -39,5 +38,3 @@ const formatContact = contact => {
   
 
 
-
-$(document).ready(getcontact)
