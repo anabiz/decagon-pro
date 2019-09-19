@@ -1,79 +1,67 @@
 {
   "freelance": [
     {
-      "title": "decagon assesment 1",
-      "firstName": "rrrr",
-      "lastName": "dewdgg",
-      "phone": "577890",
+      "firstName": "ikechukwu",
+      "lastName": "dancer",
+      "phone": "09064532133",
+      "id": 8
+    },
+    {
+      "firstName": "nnamani",
+      "lastName": "web designer",
+      "phone": "08056443278",
+      "id": 9
+    },
+    {
+      "title": "undefined",
+      "firstName": "john",
+      "lastName": "fashion",
+      "phone": "090533214",
+      "id": 10
+    },
+    {
+      "firstName": "chukwujekwu",
+      "lastName": "electrician",
+      "phone": "07065456787",
+      "id": 11
+    },
+    {
+      "firstName": "marthins",
+      "lastName": "D.J",
+      "phone": "09054323478",
       "id": 12
     },
     {
-      "title": "decagon assesment 1",
-      "firstName": "rrrr",
-      "lastName": "dewdgg",
-      "phone": "577890",
+      "firstName": "marthins",
+      "lastName": "D.J",
+      "phone": "09054323478",
       "id": 13
     },
     {
-      "title": "decagon assesment 1",
-      "firstName": "rrrr",
-      "lastName": "xfssdd",
-      "phone": "7765",
+      "firstName": "chinaza",
+      "lastName": "cook",
+      "phone": "09054655678",
       "id": 14
     },
     {
-      "title": "decagon assesment 1",
-      "firstName": "rrrr",
-      "lastName": "xfssdd",
-      "phone": "7765",
+      "firstName": "lotachukwu",
+      "lastName": "mechanic",
+      "phone": "03056789832",
       "id": 15
     },
     {
-      "title": "decagon assesment 2",
-      "firstName": "ggrdd",
-      "lastName": "xfssdd",
-      "phone": "66788",
+      "firstName": "lotachukwu",
+      "lastName": "mechanic",
+      "phone": "03056789832",
       "id": 16
-    },
-    {
-      "title": "decagon assesment 1",
-      "firstName": "tochukwu",
-      "lastName": "ani",
-      "phone": "08065661350",
-      "id": 17
-    },
-    {
-      "title": "decagon assesment 1",
-      "firstName": "tochukwu",
-      "lastName": "ani",
-      "phone": "08065661350",
-      "id": 18
-    },
-    {
-      "firstName": "mr mike ogbonna",
-      "lastName": "Graphi designer",
-      "phone": "08065774327",
-      "id": 21
-    },
-    {
-      "firstName": "Mrs jenipher chalse",
-      "lastName": "fashion designer",
-      "phone": "08077765432",
-      "id": 22
-    },
-    {
-      "firstName": "chukwu chidi",
-      "lastName": "plumber",
-      "phone": "09043421267",
-      "id": 23
     }
   ],
-  "user": [
+
+  "admin": [ 
     {
-      "password": "300"
-    },
-    {
-      "email": "anabizconcept9@gmail.com"
+      "password":"08065661350",
+      "username":"anabiz"
+
     }
   ]
 }

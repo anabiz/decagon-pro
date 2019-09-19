@@ -23,7 +23,7 @@
 <body style="background-color:floralwhite">
   
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="text-emphasis-color: cornflowerblue">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="file:///C:/Users/Anabiz/decagon-pro/template/accountform.html">Anabiz</a>
@@ -31,7 +31,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li><a  href="#">login</a></li>
-      <li><a onclick="myfunction()" href="#">sign up</a></li>
+      <li><a onclick="myfunction()" href="./signup.html">sign up</a></li>
       <li><a onclick="myfunction()" href="#">Post a job</a></li>
     </ul>
   </div>
@@ -39,7 +39,7 @@
   
 
 
-
+<h2 id="titl" style="text-align: center; color:cornflowerblue">Find your perfect freelancer</h2>
 
       <div id="dvImage" style="height: 300px"> <span><img id="image" style="height: 308px" src="koala.jpg" alt="a teacher"></span>
 
@@ -50,14 +50,14 @@
   
     <div class="well">
     <section>
-        <form id="form" style="display: none">
-          <input type="text" placeholder="contact title" name="title" />
-          <input type="text" placeholder="contact firstName" name="firstName" />
-          <input type="text" placeholder="contact lastName" name="lastName" />
-          <input type="number" placeholder="contact phone" name="phone" />
-          <button id="submit-new-contact">add new contact</button>
-          <button id="submit-edited-contact">save contact</button>
-        </form>
+      <form>
+        <input type="text" placeholder="Name" name="title" />
+        <input type="text" placeholder="Name" name="firstName" />
+        <input type="text" placeholder="Job" name="lastName" />
+        <input type="number" placeholder="Phone" name="phone" />
+        <button id="submit-new-contact">add new profile</button>
+        <button id="submit-edited-contact">save profile</button>
+      </form>
     </section>
         
   
@@ -76,7 +76,7 @@
 
 <script>
 
-      var imageSources = ["Desert.jpg", "Jellyfish.jpg"];
+      var imageSources = ["Desert.jpg", "Jellyfish.jpg","koala.jpg"];
       
       var index = 0;
       setInterval (function(){
@@ -87,15 +87,7 @@
         index++;                                                                                                                                                                                     
       } , 4000);
 
-  function myfunction() {
-  var x = document.getElementById("form");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }else{
-    x.style.display = "none";
-  }
-}
-
+  
 </script>
   <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -103,5 +95,6 @@
   crossorigin="anonymous"
 ></script>
 <script src="file:///C:/Users/Anabiz/decagon-pro/script.js"></script>
+
 </body>
 </html>
