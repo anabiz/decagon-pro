@@ -1,9 +1,8 @@
-
+const DATABAS_URI = 'http://localhost:3000/admin';
 
 $(document).ready(function(event){
     event.preventDefault;
-    const DATABAS_URI = 'http://localhost:3000/admin';
-
+    
      async () => {
     const login = document.querySelector('#login');
     const username=document.querySelector('#username');

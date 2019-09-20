@@ -35,12 +35,6 @@
       "firstName": "lotachukwu",
       "lastName": "mechanic",
       "phone": "03056789832",
-      "id": 15
-    },
-    {
-      "firstName": "lotachukwu",
-      "lastName": "mechanic",
-      "phone": "03056789832",
       "id": 16
     },
     {
@@ -60,6 +54,12 @@
       "lastName": "designer",
       "phone": "08065661350",
       "id": 19
+    },
+    {
+      "firstName": "chalse",
+      "lastName": "marketer",
+      "phone": "08076543212",
+      "id": 20
     }
   ],
   "admin": [
