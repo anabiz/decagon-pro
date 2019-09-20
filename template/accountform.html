@@ -35,7 +35,7 @@
         <li><a href="#">sign up</a></li>
         <li><a href="#">Post a job</a></li>
       </ul>
-      <h3 style="float: right">Welcome to the best freelance market</h3>
+      <h3 style="float: right; color:2px solid #73AD21">Welcome to the best freelance market</h3>
     </div>
   </nav>
 
@@ -43,11 +43,11 @@
 <div class= "container">
 
 <div class="row">
-  <div class="col-sm-2" id="first">
+  <div class="col-sm-3" id="first">
       <form style='text-align: center;border-radius: 25px; border: 2px solid #73AD21;
       padding: 20px; 
       width: 200px;
-      height: 150px,margin: 25px'>
+      height: 150px;margin: 25px'>
         <input id="username" type="text" placeholder="Username" name="username" />
         <input id="password" type="text" placeholder="password" name="password" />
       
@@ -72,30 +72,29 @@
 
 <script>
 
+const DATABAS_URI = 'http://localhost:3000/admin';
 
-    $(document).ready(function(){
-      //const DATABAS_URI = 'http://localhost:3000/admin';
-      
-                    // on click Sign In Button checks that username =='admin' and password == 'password'
-                    $("#login").click(function(){
-                    if( $("#username").val()=="anabiz" && $("#password").val()=="08065661350") {
-                            $("#first").hide();
-                            window.location.href = "./template/userhome"
-                          
-                        }
-                    else {
-                        alert("Please try again");
-                    }
+$(document).ready(function(event){
+    event.preventDefault;
     
-                    $("#logout").click(function() {
-                    $("form")[0].reset();
-                    $("#first").show();
-                    $("#second").hide();
-                });
-            });
-    
-        });
-      
+     async () => {
+    const login = document.querySelector('#login');
+    const username=document.querySelector('#username');
+    const password=document.querySelector('#password');
+     const response= await fetch(DATABAS_URI);
+     const admin = await response.json();
+     console.log(admin);
+     pass =admin[0].password;
+     username1=admin[0].username;
+     login.addEventListener('click',()=>{
+         if(pass=="password" && username1=="username"){
+             console.log(yyyyyy);
+             return (window.location =  "landingpage.html");
+         }
+     })
+    };
+
+});
 
     
     
