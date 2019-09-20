@@ -1,30 +1,24 @@
-const DATABASE_URI = 'http://localhost:3000/user';
 
-$("#loginbutton").click(function(){
-    event.preventDefault();
-    const userEmail = $('#loginEmail');
-    const userPwd=$('loginPwd').val();
-    Console.log(userEmail, userPwd);
 
-    
-    if(userEmail!=="" && userPwd!==""){
-        alert('hello');
-        fetch('${userURL}').then(response=>response.json()).then(userData=> {
-            const user =userData.find(user=>user.email==userEmail)
-            if(!user) return $('#emailError').html("invalide email").addClass('test-danger');
-            if(user.password != user) return $('#pwdError').html("invalid password").addClass('textpdanger');
-            localStorage.set('user', json.stringify(user))
-            window.location = "landingpage.html";
-        })
-    
-    }   
-    else{
-        if(userEmail==""){
-            $('#emailError').html("input email").addClass('text-danger');
-        }
-        if(userPwd==""){
-            $('#pwdError').html("input password").addClass('text-danger');
-        }
-    }
-})
-    
+$(document).ready(function(event){
+    event.preventDefault;
+    const DATABAS_URI = 'http://localhost:3000/admin';
+
+     async () => {
+    const login = document.querySelector('#login');
+    const username=document.querySelector('#username');
+    const password=document.querySelector('#password');
+     const response= await fetch(DATABAS_URI);
+     const admin = await response.json();
+     console.log(admin);
+     pass =admin[0].password;
+     username1=admin[0].username;
+     login.addEventListener('click',()=>{
+         if(pass==password && username1==username){
+             console.log(yyyyyy);
+             return (window.location =  "landingpage.html");
+         }
+     })
+    };
+
+});
