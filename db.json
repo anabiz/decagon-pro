@@ -20,22 +20,10 @@
       "id": 10
     },
     {
-      "firstName": "chukwujekwu",
-      "lastName": "electrician",
-      "phone": "07065456787",
-      "id": 11
-    },
-    {
       "firstName": "marthins",
       "lastName": "D.J",
       "phone": "09054323478",
       "id": 12
-    },
-    {
-      "firstName": "marthins",
-      "lastName": "D.J",
-      "phone": "09054323478",
-      "id": 13
     },
     {
       "firstName": "chinaza",
@@ -54,14 +42,30 @@
       "lastName": "mechanic",
       "phone": "03056789832",
       "id": 16
+    },
+    {
+      "firstName": "anthony",
+      "lastName": "transporter",
+      "phone": "08065664321",
+      "id": 17
+    },
+    {
+      "firstName": "joseph",
+      "lastName": "designer",
+      "phone": "08065661350",
+      "id": 18
+    },
+    {
+      "firstName": "joseph",
+      "lastName": "designer",
+      "phone": "08065661350",
+      "id": 19
     }
   ],
-
-  "admin": [ 
+  "admin": [
     {
-      "password":"08065661350",
-      "username":"anabiz"
-
+      "password": "08065661350",
+      "username": "anabiz"
     }
   ]
 }

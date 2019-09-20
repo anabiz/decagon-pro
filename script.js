@@ -20,6 +20,7 @@ const getContact = async () => {
   // register button actions
   editContacts.forEach(button =>
     button.addEventListener('click', ({ path }) => {
+      console.log(path);
       submitNewContact.style.display = 'none';
       submitEditedContact.style.display = 'unset';
 
@@ -63,12 +64,16 @@ const populateContacts = contacts => {
 const formatContact = contact => {
   const { firstName, lastName, phone } = contact;
   return `
-  <div class='contact col-sm-4' onclick='myfun' style='border-color:blue; text-align: center;heigth:30px' data-contact=${JSON.stringify(contact)}>
-      <div> ${firstName}</div><div style='margin-bottom:20px'> ${lastName}</div>
+  <div class='contact col-sm-4' style='text-align: center;border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px,margin: 25px' data-contact=${JSON.stringify(contact)}>
+      <div> ${firstName}</div><div> ${lastName}</div>
       <div > ${phone}</div>
-      <div class='edit-contact' style='margin-bottom:50px;border-colors'>
-            <button id='edit' onclick="myfunction()">update profile</button>
-            <button id='delete' onclick="myfunction()">Delete profile</button>
+      <div class='edit-contact'>
+            <button id='edit'>Edit </button>
+            <button id='delete' style="margin-bottom:50px">Delete</button>
       </div>
   </div>
   `;
@@ -130,10 +135,13 @@ submitEditedContact.addEventListener('click', async () => {
   await response.json();
 });
 
-function myFun() {
-  var x = document.getElementById("contact col-sm-4");
-  x.style.fontSize = "25px"; 
-  x.style.color = "red"; 
-}
 
+function myfunction() {
+  var x = document.getElementById("form");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }else{
+    x.style.display = "none";
+  }
+}
 $(document).ready(getContact);
