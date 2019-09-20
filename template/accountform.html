@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>online freelancer market</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -28,115 +28,42 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="file:///C:/Users/Anabiz/decagon-pro/template/accountform.html">Anabiz</a>
+        <a class="navbar-brand" href="#">Anabiz</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">login</a></li>
+        <li><a onclick="myfun1()" href="#">admin</a></li>
         <li><a href="#">sign up</a></li>
         <li><a href="#">Post a job</a></li>
       </ul>
+      <h3 style="float: right">Welcome to the best freelance market</h3>
     </div>
   </nav>
 
 
+<div class= "container">
 
-
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-      <br>
-      <form>
-        <input type="email" placeholder="email" name="title" />
-        <input type="text" placeholder="user-name" name="firstName" />
-       
-        <button id="loginbutton" >log in</button>
+<div class="row">
+  <div class="col-sm-2" id="first">
+      <form style='text-align: center;border-radius: 25px; border: 2px solid #73AD21;
+      padding: 20px; 
+      width: 200px;
+      height: 150px,margin: 25px'>
+        <input id="username" type="text" placeholder="Username" name="username" />
+        <input id="password" type="text" placeholder="password" name="password" />
+      
+        <button id="login" >login</button>
         <button id="sign-up-form">sign-up</button>
       </form>
-
+      <div style="margin-top:40px"><a href="file:///C:/Users/Anabiz/decagon-pro/template/userhome.html"><h3>FINE A FREELANCER HERE</h3> </a></div>
     </div>
-    <br>
-    <div class="well">
-      <section>
-          <form id="form">
-            <input type="text" placeholder="contact title" name="title" />
-            <input type="text" placeholder="contact firstName" name="firstName" />
-            <input type="text" placeholder="contact lastName" name="lastName" />
-            <input type="number" placeholder="contact phone" name="phone" />
-            <button id="submit-new-contact">add new contact</button>
-            <button id="submit-edited-contact">save contact</button>
-          </form>
-      </section>
-          
-    
-    </div>
-    <div class="col-sm-9">
-      <div class="well">
-        <div id="dvImage" style="height: 300px"> <span><img id="image" style="height: 308px; width: 100%" src="koala.jpg" alt="a teacher"></span>
-
+      <div id="second"></div>
+        <div class="col-sm-9" id="Image" style="height: 100%"> <span><img id="image" style="height: 100%S; width: 100%" src="Desert.jpg" alt="a teacher"></span>
         </div>
-        <p>Some text..</p>
-      </div>
-      <div class="row">
-        
-        <div class="col-sm-4" class="display-freelancers">
-          <div class="well">
-            <h4>Pages</h4>
-            <p>100 Million</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Sessions</h4>
-            <p>10 Million</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Bounce</h4>
-            <p>30%</p> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
+       
     </div>
   </div>
-</div>
-<script src="./login.js"></script>
+
+
  <script
  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -145,26 +72,35 @@
 
 <script>
 
-  var imageSources = ["Desert.jpg", "Jellyfish.jpg"];
-  
-  var index = 0;
-  setInterval (function(){
-    if (index === imageSources.length) {
-      index = 0;
-    }
-    document.getElementById("image").src = imageSources[index];
-    index++;                                                                                                                                                                                     
-  } , 4000);
 
-function myfunction() {
-var x = document.getElementById("form");
-if (x.style.display === "none") {
-x.style.display = "block";
-}else{
-x.style.display = "none";
-}
-}
+    $(document).ready(function(){
+      //const DATABAS_URI = 'http://localhost:3000/admin';
+      
+                    // on click Sign In Button checks that username =='admin' and password == 'password'
+                    $("#login").click(function(){
+                    if( $("#username").val()=="anabiz" && $("#password").val()=="08065661350") {
+                            $("#first").hide();
+                            window.location.href = "./template/userhome"
+                          
+                        }
+                    else {
+                        alert("Please try again");
+                    }
+    
+                    $("#logout").click(function() {
+                    $("form")[0].reset();
+                    $("#first").show();
+                    $("#second").hide();
+                });
+            });
+    
+        });
+      
 
-</script>
+    
+    
+    
+    </script>
+
 </body>
 </html>
