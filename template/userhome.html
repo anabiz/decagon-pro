@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>online freelance market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="script" type="text/css" href="/script.js"/>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" href="file:///C:/Users/Anabiz/decagon-pro/template/styles.css"/>
+  <link rel="stylesheet" href="file:///C:/Users/Anabiz/decagon-pro/template/accountform.html">
+ 
+</head>
+<style>
+  img{
+    width:100%;
+    
+  }
+</style>
+<body style="background-color:floralwhite">
+  
+
+<nav class="navbar navbar-default" style="text-emphasis-color: cornflowerblue">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Anabiz</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a  href="#">login</a></li>
+      <li><a onclick="myfunction()" href="#">sign up</a></li>
+      <li><a onclick="myfunction()" href="#">Post a job</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+
+<h2 id="titl" style="text-align: center; color:cornflowerblue">Find your perfect freelancer</h2>
+
+      <div id="dvImage" style="height: 300px"> <span><img id="image" style="height: 308px" src="koala.jpg" alt="a teacher"></span>
+
+      </div>
+  
+  </div>
+  
+  
+    <div class="well">
+    <section>
+      <form>
+        <input type="text" placeholder="Name" name="title" />
+        <input type="text" placeholder="Name" name="firstName" />
+        <input type="text" placeholder="Job" name="lastName" />
+        <input type="number" placeholder="Phone" name="phone" />
+        <button id="submit-new-contact">add new profile</button>
+        <button id="submit-edited-contact">save profile</button>
+      </form>
+    </section>
+        
+  
+  </div>
+</div>
+
+
+<div class="well">
+<div class="container">
+</div>
+
+
+<div class="display-freelancers" style="margin-top: 500pxs">
+</div >
+</div>
+
+<script>
+
+      var imageSources = ["Desert.jpg", "Jellyfish.jpg","koala.jpg"];
+      
+      var index = 0;
+      setInterval (function(){
+        if (index === imageSources.length) {
+          index = 0;
+        }
+        document.getElementById("image").src = imageSources[index];
+        index++;                                                                                                                                                                                     
+      } , 4000);
+
+  
+</script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"
+></script>
+<script src="file:///C:/Users/Anabiz/decagon-pro/template/userhome.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>online freelancer market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Anabiz</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a onclick="myfun1()" href="#">admin</a></li>
+        <li><a href="#">sign up</a></li>
+        <li><a href="#">Post a job</a></li>
+      </ul>
+      <h3 style="float: right">Welcome to the best freelance market</h3>
+    </div>
+  </nav>
+
+
+<div class= "container">
+
+<div class="row">
+  <div class="col-sm-2" id="first">
+      <form style='text-align: center;border-radius: 25px; border: 2px solid #73AD21;
+      padding: 20px; 
+      width: 200px;
+      height: 150px,margin: 25px'>
+        <input id="username" type="text" placeholder="Username" name="username" />
+        <input id="password" type="text" placeholder="password" name="password" />
+      
+        <button id="login" >login</button>
+        <button id="sign-up-form">sign-up</button>
+      </form>
+      <div style="margin-top:40px"><a href="file:///C:/Users/Anabiz/decagon-pro/template/userhome.html"><h3>FINE A FREELANCER HERE</h3> </a></div>
+    </div>
+      <div id="second"></div>
+        <div class="col-sm-9" id="Image" style="height: 100%"> <span><img id="image" style="height: 100%S; width: 100%" src="Desert.jpg" alt="a teacher"></span>
+        </div>
+       
+    </div>
+  </div>
+
+
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+ integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+ crossorigin="anonymous"
+></script>
+
+<script>
+
+
+    $(document).ready(function(){
+      //const DATABAS_URI = 'http://localhost:3000/admin';
+      
+                    // on click Sign In Button checks that username =='admin' and password == 'password'
+                    $("#login").click(function(){
+                    if( $("#username").val()=="anabiz" && $("#password").val()=="08065661350") {
+                            $("#first").hide();
+                            window.location.href = "./template/userhome"
+                          
+                        }
+                    else {
+                        alert("Please try again");
+                    }
+    
+                    $("#logout").click(function() {
+                    $("form")[0].reset();
+                    $("#first").show();
+                    $("#second").hide();
+                });
+            });
+    
+        });
+      
+
+    
+    
+    
+    </script>
+
+</body>
+</html>

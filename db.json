@@ -1,0 +1,71 @@
+{
+  "freelance": [
+    {
+      "firstName": "ikechukwu",
+      "lastName": "dancer",
+      "phone": "09064532133",
+      "id": 8
+    },
+    {
+      "firstName": "nnamani",
+      "lastName": "web designer",
+      "phone": "08056443278",
+      "id": 9
+    },
+    {
+      "title": "undefined",
+      "firstName": "john",
+      "lastName": "fashion",
+      "phone": "090533214",
+      "id": 10
+    },
+    {
+      "firstName": "marthins",
+      "lastName": "D.J",
+      "phone": "09054323478",
+      "id": 12
+    },
+    {
+      "firstName": "chinaza",
+      "lastName": "cook",
+      "phone": "09054655678",
+      "id": 14
+    },
+    {
+      "firstName": "lotachukwu",
+      "lastName": "mechanic",
+      "phone": "03056789832",
+      "id": 15
+    },
+    {
+      "firstName": "lotachukwu",
+      "lastName": "mechanic",
+      "phone": "03056789832",
+      "id": 16
+    },
+    {
+      "firstName": "anthony",
+      "lastName": "transporter",
+      "phone": "08065664321",
+      "id": 17
+    },
+    {
+      "firstName": "joseph",
+      "lastName": "designer",
+      "phone": "08065661350",
+      "id": 18
+    },
+    {
+      "firstName": "joseph",
+      "lastName": "designer",
+      "phone": "08065661350",
+      "id": 19
+    }
+  ],
+  "admin": [
+    {
+      "password": "08065661350",
+      "username": "anabiz"
+    }
+  ]
+}
